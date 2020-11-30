@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/bootstrap/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff">
+    <link rel="stylesheet" href="/public/staff/css/base.css">
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/admin/welcome">
+                    <img alt="Brand" src="/public/staff/img/icon.ico">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">{{name}}</a></li>
+                <li class="dropdown">
+                    <a href="/admin/logout" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- sidebar content -->
+    <div class="aside row">
+        <div class="col-md-2">
+            <ul>
+                <li>
+                    <h4>角色管理</h4>
+                    <ul>
+                        <li class="list-group-item">
+                            <a href="/admin/roleAdd" target="iframeRight">角色添加</a> 
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/admin/role/list" target="iframeRight">角色列表</a> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>用户管理</h4>
+                    <ul>
+                        <li class="list-group-item">
+                            <a href="/admin/staff/staffadd" target="iframeRight">用户添加</a> 
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/admin/staff/stafflist" target="iframeRight">用户列表</a> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>权限管理</h4>
+                    <ul>
+                        <li class="list-group-item">
+                            <a href="/admin/access/accessadd" target="iframeRight">权限添加</a> 
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/admin/access/accesslist" target="iframeRight">权限列表</a> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col-md-10">
+            <iframe src="/admin/staffcontroll" frameborder="0" name="iframeRight" width="100%" height="1500px"></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>

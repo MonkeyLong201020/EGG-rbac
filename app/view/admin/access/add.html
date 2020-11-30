@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul li{
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h3>权限添加</h3>
+    <form action="/admin/access/doadd" method="POST">
+        <ul>
+            <li>权限类型
+                <select name="access_type" id="">
+                    <option value="1">模块</option>
+                    <option value="2">菜单</option>
+                    <option value="3">操作</option>
+                </select>
+            </li>
+            <li>权限模块:<input type="text" name="access_module"></li>
+            <li>权限操作:<input type="text" name="access_action"></li>
+            <li>权限资源:<input type="text" name="access_url"></li>
+            <li>所属模块:
+                <select name="access_module_id" id="">
+                    <option value="0">顶级模块</option>
+                    {% for module in modules %}
+                    <option value="{{module._id}}">{{module.access_module}}</option>
+                    {% endfor %}
+                </select>
+            </li>
+            <li>权限排序:<input type="text" name="data_sort" value="100"></li>
+            <li>权限描述:
+                <textarea name="access_desc" id="" cols="60" rows="5"></textarea>
+            </li>
+            <li><input type="submit"></li>
+        </ul>
+
+    </form>
+    
+</body>
+</html>

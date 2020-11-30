@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/admin/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="table-response">
+        <table class="table table-bordered">
+            <thead>
+                <th class="text-center">权限模块</th>
+                <th class="text-center">权限类型</th>
+                <th class="text-center">权限操作</th>
+                <th class="text-center">权限资源</th>
+                <th class="text-center">权限描述</th>
+                <th class="text-center">所属模块</th>
+                <th class="text-center">数据排序</th>
+                <th class="text-center">数据状态</th>
+                <th class="text-center">创建时间</th>
+                <th class="text-center">操作</th>
+            </thead>
+            <tbody>
+                {% for access in accessAll %}
+                <tr>
+                    <td class="text-center">{{access.access_module}}</td>
+                    <td class="text-center" >
+                        {% if access.access_type == 1 %}
+                        模块
+                        {% elif access.access_type == 2 %}
+                        菜单
+                        {% else %}
+                        操作
+                        {% endif %}
+                    </td>
+                    <td class="text-center">{{access.access_action}}</td>
+                    <td class="text-center">{{access.access_url}}</td>
+                    <td class="text-center">{{access.access_desc}}</td>
+                    <td class="text-center">{{access.access_module_id}}</td>
+                    <td class="text-center">{{access.access_sort}}</td>
+                    {% if access.data_status == 1 %}
+                    <td class="text-center">正常</td>
+                    {% else %}
+                    <td class="text-center">异常</td>
+                    {% endif %}
+                    <td class="text-center">{{helper.dateFormat(access.time_create)}}</td>
+                    <td class="text-center">
+                        <a href="/admin/access/edit?id={{access._id}}">修改</a>
+                        <a href="/admin/access/delete?id={{access._id}}&&type=1">删除</a>
+                    </td>
+                </tr>
+                    {% for sub in access.subAccess %}
+                    <tr>
+                        <td class="text-center">{{sub.access_module}}</td>
+                        <td class="text-center">
+                            {% if sub.access_type == 1 %}
+                            模块
+                            {% elif sub.access_type == 2 %}
+                            菜单
+                            {% else %}
+                            操作
+                            {% endif %}
+                        </td>
+                        <td class="text-center">{{sub.access_action}}</td>
+                        <td class="text-center">{{sub.access_url}}</td>
+                        <td class="text-center">{{sub.access_desc}}</td>
+                        <td class="text-center">{{sub.access_module_id}}</td>
+                        <td class="text-center">{{sub.access_sort}}</td>
+                        {% if sub.data_status == 1 %}
+                        <td class="text-center">正常</td>
+                        {% else %}
+                        <td class="text-center">异常</td>
+                        {% endif %}
+                        <td class="text-center">{{helper.dateFormat(sub.time_create)}}</td>
+                        <td class="text-center">
+                            <a href="/admin/access/edit?id={{sub._id}}">修改</a>
+                            <a href="/admin/access/delete?id={{sub._id}}&&type=2">删除</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

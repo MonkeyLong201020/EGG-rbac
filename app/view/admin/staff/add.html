@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>用户添加页面</h2>
+    <form action="/admin/staff/doadd" method="post">
+        <ul>
+            <li>用户账号：<input type="text" name="username"></li>
+            <li>用户密码：<input type="password" name="password"></li>
+            <li>用户名称：<input type="text" name="name"></li>
+            <li>用户编号：<input type="text" name="no"></li>
+            <li>用户电话：<input type="text" name="phone"></li>
+            <li>用户角色： 
+                <select name="role_id"> 
+                    {% for role in roles %}
+                    <option value="{{role._id}}">
+                    {{role.role_name}}
+                     </option> 
+                    {% endfor %} 
+                </select> 
+            </li>
+            <li><input type="submit" value="提交"></li>
+        </ul>
+    </form>
+</body>
+
+</html>

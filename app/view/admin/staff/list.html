@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/admin/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="table-response">
+        <table class="table table-bordered">
+            <thead>
+                <th class="text-center">用户名称</th>
+                <th class="text-center">用户编号</th>
+                <th class="text-center">用户电话</th>
+                <th class="text-center">用户角色</th>
+                <th class="text-center">创建时间</th>
+                <th class="text-center">用户状态</th>
+                <th class="text-center">操作</th>
+            </thead>
+            <tbody>
+                {% for staff in staffs %}
+                <tr>
+                    <td class="text-center">{{staff.name}}</td>
+                    <td class="text-center">{{staff.no}}</td>
+                    <td class="text-center">{{staff.phone}}</td>
+                    <td class="text-center">{{staff.role[0].role_name}}</td>
+                    <td class="text-center">{{helper.dateFormat(staff.time_create)}}</td>
+                    {% if staff.status == 1 %}
+                    <td class="text-center">正常</td>
+                    {% else %}
+                    <td class="text-center">异常</td>
+                    {% endif %}
+                    <td class="text-center">
+                        <a href="/admin/staff/edit?id={{staff._id}}">修改</a>
+                        <a href="/admin/staff/delete?id={{staff._id}}">删除</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

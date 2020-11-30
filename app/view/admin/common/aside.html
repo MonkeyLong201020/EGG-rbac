@@ -1,0 +1,20 @@
+<div class="aside">
+  <ul class="aside-ul">
+    {% for access in staffAccess %}
+    <li>
+      {% if ( access.access_type ==1 and userinfo.is_super ==1 ) or (access.access_type ==1 and access.checked) %}
+      <h4>{{access.access_module}}</h4>
+      {% endif %}
+      <ul>
+        {% for sub in access.subAccess %}
+        {% if ( sub.access_type == 2 and userinfo.is_super ==1 ) or (sub.access_type == 2 and sub.checked) %}
+        <li class="list-group-item">
+          <a href="{{sub.access_url}}" target="iframeRight">{{sub.access_action}}</a>
+        </li>
+        {%endif%}
+        {%endfor%}
+        </ul>
+      </li>
+      {%endfor%}  
+    </ul>
+  </div>
