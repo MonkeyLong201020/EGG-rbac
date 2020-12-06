@@ -5,7 +5,7 @@ class HomeController extends Controller {
     // const userinfo = this.ctx.session.userinfo
     // if(userinfo){
       // let name = userinfo.name
-      let name = this.ctx.locals.userinfo.name //全局变量
+      let {name} = this.ctx.locals.userinfo //全局变量
       await this.ctx.render('admin/home',{name})
     // }else{
     //   this.ctx.response.redirect('/admin/login')

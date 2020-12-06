@@ -157,10 +157,27 @@ class AccessService extends Service {
     }
     //根据id查找  角色权限
     async findAccessByRole(role_id) {
-        let role_access_array = await this.ctx.model.AccessRole.find({role_id})
+        let role_access_array = await this.ctx.model.AccessRole.find({ role_id })
         return {
             flag: true,
             data: role_access_array
+        }
+    }
+    //根据url查询当前当前url的权限
+    async findAccessByUrl(access_url) {
+        // console.log('--------'+access_url);
+        let result = await this.ctx.model.Access.find({ access_url })
+        console.log(result);
+        if (result && result.length>0) {
+            return {
+                flag: true,
+                data: result[0]
+            }
+        }else{ 
+            return {
+                flag: false,
+                msg:'url 查询失败'
+            }
         }
     }
 }

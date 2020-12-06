@@ -19,7 +19,6 @@ module.exports = app => {
     router.post('/admin/staff/doedit', controller.admin.staff.doedit)
     router.get('/admin/staff/delete', controller.admin.staff.delete)
 
-    
     //role
     router.get('/admin/iframeController', controller.admin.role.default)
     router.get('/admin/role/add', controller.admin.role.add)

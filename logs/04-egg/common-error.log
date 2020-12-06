@@ -6862,3 +6862,361 @@ name: "Template render error"
 pid: 21300
 hostname: LAPTOP-UQTHU075
 
+2020-12-02 20:50:54,505 ERROR 21400 [-/127.0.0.1/-/9ms GET /admin] nodejs.TypeError: Cannot read property 'toString' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:44)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 21400
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 20:55:01,660 ERROR 20240 [-/127.0.0.1/-/38ms POST /admin/dologin?_csrf=37GyrAUM-vCMBKXCZSP2XiwwyXeP1m9uZjzM] nodejs.TypeError: Cannot read property 'toString' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:44)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 20240
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 20:56:03,095 ERROR 21168 [-/127.0.0.1/-/37ms POST /admin/dologin?_csrf=37GyrAUM-vCMBKXCZSP2XiwwyXeP1m9uZjzM] nodejs.TypeError: Cannot read property 'toString' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:44)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 21168
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 20:56:45,694 ERROR 9472 [-/127.0.0.1/-/39ms POST /admin/dologin?_csrf=37GyrAUM-vCMBKXCZSP2XiwwyXeP1m9uZjzM] nodejs.TypeError: Cannot read property 'toString' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:44)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 9472
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 20:57:32,683 ERROR 7736 [-/127.0.0.1/-/36ms POST /admin/dologin?_csrf=37GyrAUM-vCMBKXCZSP2XiwwyXeP1m9uZjzM] nodejs.TypeError: Cannot read property 'toString' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:44)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 7736
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 20:58:46,989 ERROR 12408 [-/127.0.0.1/-/39ms POST /admin/dologin?_csrf=37GyrAUM-vCMBKXCZSP2XiwwyXeP1m9uZjzM] nodejs.TypeError: Cannot read property 'toString' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:44)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 12408
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 20:59:44,746 ERROR 20316 [-/127.0.0.1/-/38ms POST /admin/dologin?_csrf=37GyrAUM-vCMBKXCZSP2XiwwyXeP1m9uZjzM] nodejs.TypeError: Cannot read property 'toString' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:44)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 20316
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:00:32,361 ERROR 5464 [-/127.0.0.1/-/28ms GET /admin/login] nodejs.TypeError: Cannot read property '_id' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:40)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 5464
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:00:36,450 ERROR 5464 [-/127.0.0.1/-/7ms GET /admin] nodejs.TypeError: Cannot read property '_id' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:40)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 5464
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:02:13,444 ERROR 9564 [-/127.0.0.1/-/44ms GET /admin] nodejs.TypeError: Cannot read property 'name' of undefined
+    at HomeController.welcome (D:\web\DA3up\项目班11.3\04-egg\app\controller\admin\index.js:8:43)
+    at Object.callFn (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\web\DA3up\项目班11.3\04-egg\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\web\DA3up\项目班11.3\04-egg\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-compose\index.js:44:32)
+    at next (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-compose\index.js:45:18)
+    at D:\web\DA3up\项目班11.3\04-egg\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-compose\index.js:44:32)
+    at D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\web\DA3up\项目班11.3\04-egg\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:21:23
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+
+pid: 9564
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:03:31,545 ERROR 13504 [-/127.0.0.1/-/33ms GET /admin] nodejs.TypeError: Cannot destructure property 'name' of 'this.ctx.locals.userinfo' as it is undefined.
+    at HomeController.welcome (D:\web\DA3up\项目班11.3\04-egg\app\controller\admin\index.js:8:12)
+    at Object.callFn (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\web\DA3up\项目班11.3\04-egg\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\web\DA3up\项目班11.3\04-egg\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-compose\index.js:44:32)
+    at next (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-compose\index.js:45:18)
+    at D:\web\DA3up\项目班11.3\04-egg\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-compose\index.js:44:32)
+    at D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\web\DA3up\项目班11.3\04-egg\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:21:23
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+
+pid: 13504
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:05:39,282 ERROR 2268 [-/127.0.0.1/-/6ms GET /admin/staff/doadd] nodejs.TypeError: Cannot read property '_id' of undefined
+    at StaffService.checkUrlAccess (D:\web\DA3up\项目班11.3\04-egg\app\service\staff.js:155:40)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:12:27
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 2268
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:26:03,498 ERROR 19080 [-/127.0.0.1/-/8ms GET /admin/iframeController] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:13:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 19080
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:26:28,025 ERROR 19080 [-/127.0.0.1/-/10ms GET /admin/rstaff/add] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:13:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 19080
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:26:58,362 ERROR 19080 [-/127.0.0.1/-/6ms GET /admin/iframeController] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:13:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 19080
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:27:53,204 ERROR 19080 [-/127.0.0.1/-/5ms GET /admin/iframeController] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:13:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 19080
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:30:26,550 ERROR 1500 [-/127.0.0.1/-/8ms GET /admin/iframeController] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:13:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 1500
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:32:33,241 ERROR 6520 [-/127.0.0.1/-/10ms GET /admin/iframeController] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:13:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 6520
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:35:43,256 ERROR 7864 [-/127.0.0.1/-/5ms GET /admin/iframeController] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:13:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 7864
+hostname: LAPTOP-UQTHU075
+
+2020-12-02 21:36:46,098 ERROR 21224 [-/127.0.0.1/-/25ms GET /admin/welcome] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at D:\web\DA3up\项目班11.3\04-egg\app\middleware\adminAuth.js:13:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\web\DA3up\项目班11.3\04-egg\node_modules\koa-static-cache\index.js:41:56
+    at async notfound (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\web\DA3up\项目班11.3\04-egg\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 21224
+hostname: LAPTOP-UQTHU075
+
